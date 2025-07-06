@@ -1,0 +1,42 @@
+1.Database creation
+CREATE DATABASE snakeAPP;
+
+2.USE DATABASE snakeAPP;
+
+3.TABLE CREATION
+CREATE TABLE USERS(
+id int,
+name varchar(100),
+email varchar(100),
+phoneNumber varchar(20),
+password varchar(100)
+);
+4.Data insertation
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(1,'Rahim','rahim@gmail.com','+880156876549','rahim123');
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(1,'Arnab Nandi','arnabnandi.cps.mbstu@gmail.com','+88015699949','mbstu123');
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(1,'Karim','karimim@gmail.com','+880156866649','karimim123');
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(1,'Hamim','hamim@gmail.com','+8801566346484','hamim123');
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(1,'Sumona','serjiyasumona@gmail.com','+8801568566774','mbstu1902123');
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(1,'Samim','samim@gmail.com','+880156844520','samim123');
+
+5.Find user by email and password
+SELECT *FROM USERS
+WHERE email = 'userEmail' and passworsd = 'userPassword'
+
+6.Find All Users
+SELECT 8from Users;
+
+7.User updation
+UPDATE USERS
+SET name = 'Rahim Mia'
+WHERE email = 'rahim@gmail.com'
+
+8.User Deletion
+DELETE USERS
+WHERE email = 'rahim@gmail.com'
