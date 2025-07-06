@@ -11,6 +11,7 @@ email varchar(100),
 phoneNumber varchar(20),
 password varchar(100)
 );
+
 4.Data insertation
 INSERT INTO USERS(id,name,email,phoneNumber,password)
 values(1,'Rahim','rahim@gmail.com','+880156876549','rahim123');
